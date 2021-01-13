@@ -114,4 +114,3 @@ class Recommend():
 #i = input(":")
 #r =Recommend()
 #print(r.more_like_idx(i))
-#
