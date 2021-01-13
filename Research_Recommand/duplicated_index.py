@@ -76,6 +76,7 @@ def indexing(duplicate_list):
                             researcher_fields = row[4],
                             name_for_extr = row[0])
     wr.commit()
+    
 duplicate_list = duplicate()
 indexing(duplicate_list)
 conn.close()
