@@ -25,7 +25,7 @@ def kkma_ana(input_word):
     return ' '.join(kkma.nouns(input_word))+' '.join([token.text for token in stem(english)])
 
 def duplicate():
-    conn = pymysql.connect(host = "moberan.com", user = "rndhubv2", password = "rndhubv21@3$",  db = "inu_rndhub", charset = "utf8")
+    conn = pymysql.connect()
     curs = conn.cursor()
 
     num_list = list()
