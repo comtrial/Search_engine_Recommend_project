@@ -61,7 +61,7 @@ def duplicate():
 class Duplicated_Indexing():    
 
     def indexing(self):
-        conn = pymysql.connect(host = "moberan.com", user = "rndhubv2", password = "rndhubv21@3$",  db = "inu_rndhub", charset = "utf8")
+        conn = pymysql.connect()
         curs = conn.cursor()
 
         curs.execute('Select target_idx, target_type_code from tbl_data_image')
@@ -205,7 +205,7 @@ class Department_indexing():
 
 class Company_indexing():
     def indexing(self):
-        conn = pymysql.connect(host = "moberan.com", user = "rndhubv2", password = "rndhubv21@3$",  db = "inu_rndhub", charset = "utf8")
+        conn = pymysql.connect()
         curs = conn.cursor()   
 
         company_indexdir = '/Research_Recommend/company_index'
